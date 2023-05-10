@@ -8,20 +8,22 @@ public class DialogController : MonoBehaviour
     
     private int dialogListIndex;
     private int dialogMsgIndex;
+    private bool active;
 
 	private void Start()
 	{
-        Activate(); //TODO: Remove 
+        //Activate(); //TODO: Remove 
 	}
 
 	private void Update()
 	{
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (active && Input.GetKeyDown(KeyCode.Space))
             NextDialog();
 	}
 
 	public void Activate()
 	{
+        active = true;
         dialogListIndex = 0;
         dialogListIndex = 0;
         NextDialog();
@@ -64,6 +66,7 @@ public class DialogController : MonoBehaviour
 
     public void Deactivate()
 	{
+        active = false;
         DialogDisplay.Instance.HideDisplay();
         PlayerMovement.Instance.SetCanMove(true);
     }
