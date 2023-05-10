@@ -40,8 +40,8 @@ public class DialogController : MonoBehaviour
 
         Dialog d = dialogList[dialogListIndex];
 
-        
 
+        d.Cam.gameObject.SetActive(true);
         DialogDisplay.Instance.SetDisplay(d.Name, d.Message[dialogMsgIndex], d.PortraitImage);
 		if (d.targetAnimator)
 		{
@@ -66,6 +66,7 @@ public class DialogController : MonoBehaviour
 
     public void Deactivate()
 	{
+        dialogList[0].Cam.gameObject.SetActive(false);
         active = false;
         DialogDisplay.Instance.HideDisplay();
         PlayerMovement.Instance.SetCanMove(true);

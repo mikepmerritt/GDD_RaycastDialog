@@ -13,6 +13,7 @@ public class Dialog
 	public string Name;
 	public Animator targetAnimator;
 	public RenderTexture PortraitImage;
+	public Camera Cam;
 	public string[] Message;
 	public dialogAnimationEnum animation;
 }
