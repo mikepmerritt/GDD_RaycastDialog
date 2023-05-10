@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 9d65a840401fd274ab31d43da682919d
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Neodex
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: fa555cf5e74805343be231a8dce6fc7d, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

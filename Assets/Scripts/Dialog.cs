@@ -1,18 +1,18 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
 using UnityEngine;
 
+[Serializable]
 public class Dialog
 {
-	public enum EmotionEnum
+	public enum dialogAnimationEnum
 	{
-		Default,
-		Happy,
-		Sad,
-		Angry
+		idle,
+		talk,
+		confused
 	}
-
-	public Camera PortraitCamera;
+	public string Name;
+	public Animator targetAnimator;
+	public RenderTexture PortraitImage;
 	public string[] Message;
-	public EmotionEnum Emotion;
+	public dialogAnimationEnum animation;
 }
